@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C19704931FC8693B007C9F26 /* btn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C19704911FC8693B007C9F26 /* btn2.jpg */; };
+		C19704941FC8693B007C9F26 /* btn1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C19704921FC8693B007C9F26 /* btn1.jpg */; };
 		F1305B241FC80CE800B255B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1305B231FC80CE800B255B5 /* main.m */; };
 		F1305B271FC80CE800B255B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1305B261FC80CE800B255B5 /* AppDelegate.m */; };
 		F1305B2A1FC80CE800B255B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1305B291FC80CE800B255B5 /* ViewController.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C19704911FC8693B007C9F26 /* btn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = btn2.jpg; path = "../../../Downloads/下载图片/btn2.jpg"; sourceTree = "<group>"; };
+		C19704921FC8693B007C9F26 /* btn1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = btn1.jpg; path = "../../../Downloads/下载图片/btn1.jpg"; sourceTree = "<group>"; };
 		F1305B1F1FC80CE800B255B5 /* FirstXcodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstXcodeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1305B231FC80CE800B255B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1305B251FC80CE800B255B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		F1305B161FC80CE700B255B5 = {
 			isa = PBXGroup;
 			children = (
+				C19704921FC8693B007C9F26 /* btn1.jpg */,
+				C19704911FC8693B007C9F26 /* btn2.jpg */,
 				F1305B211FC80CE800B255B5 /* FirstXcodeTest */,
 				F1305B201FC80CE800B255B5 /* Products */,
 			);
@@ -136,6 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19704931FC8693B007C9F26 /* btn2.jpg in Resources */,
+				C19704941FC8693B007C9F26 /* btn1.jpg in Resources */,
 				F1305B321FC80CE800B255B5 /* LaunchScreen.storyboard in Resources */,
 				F1305B2F1FC80CE800B255B5 /* Assets.xcassets in Resources */,
 				F1305B2D1FC80CE800B255B5 /* Main.storyboard in Resources */,
@@ -300,6 +308,7 @@
 				F1305B381FC80CE800B255B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
