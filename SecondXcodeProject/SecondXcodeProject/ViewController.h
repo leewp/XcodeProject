@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    UISwitch* _mySwitch;
+}
 
+@property (retain, nonatomic) UISwitch* mySwitch;
 
 @end
 

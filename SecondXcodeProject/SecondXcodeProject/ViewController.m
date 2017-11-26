@@ -15,9 +15,9 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+@synthesize mySwitch = _mySwitch;
+
+- (void)testLabel{
     UILabel* label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 100)];
     label.text = @"文字回顾";
     label.backgroundColor = [UIColor blueColor];
@@ -27,9 +27,32 @@
     
     [self.view addSubview:label];
     self.view.backgroundColor = [UIColor greenColor];
+}
+
+- (void)testSwitch {
+    _mySwitch = [[UISwitch alloc] initWithFrame:CGRectMake(100, 100, 40, 0)];
+    [_mySwitch setOn:YES];
+    [_mySwitch setOnTintColor:[UIColor redColor]];
+    [_mySwitch setThumbTintColor:[UIColor blueColor]];
+    [_mySwitch setTintColor:[UIColor purpleColor]];
+    [_mySwitch addTarget:self action:@selector(swChange:) forControlEvents:UIControlEventValueChanged];
     
+    [self.view addSubview:_mySwitch];
+}
+
+- (void)swChange: (UISwitch*) sw{
+    if(sw.on == YES){
+        NSLog(@"开关被打开");
+    }else {
+        NSLog(@"开关被关闭");
+    }
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"vc1 viewDidLoad 第一次调用");
-    
+    [self testSwitch];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

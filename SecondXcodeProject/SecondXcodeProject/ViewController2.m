@@ -35,7 +35,7 @@
 
 - (void)viewDidDisappear:(BOOL)animated {
     NSLog(@"vc2 视图已经消失");
-}
+} 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
