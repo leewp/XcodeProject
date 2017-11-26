@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize timerView;
 
 - (void)createUI{
     UILabel* lable = [[UILabel alloc]init];
@@ -137,13 +138,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"这是我的第一个Xcode项目");
-
+    //NSLog(@"这是我的第一个Xcode项目");
     //[self createUI];
     //[self createRectButton] ;
     //[self createImageButton] ;
     //[self testButtonEvent];
-    [self testUIView];
+    //[self testUIView];
+    UIButton* btnStart = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btnStart.frame = CGRectMake(100, 100, 100, 40);
+    [btnStart setTitle:@"启动定时器" forState:UIControlStateNormal];
+    [btnStart addTarget:self action:@selector(startTimer) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnStart];
+    
+    UIButton* btnStop = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btnStop.frame = CGRectMake(100, 200, 100, 40);
+    [btnStop setTitle:@"停止定时器" forState:UIControlStateNormal];
+    [btnStop addTarget:self action:@selector(stopTimer) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnStop];
+    
+    UIView* view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+    view.backgroundColor = [UIColor orangeColor];
+    view.tag = 103;
+    [self.view addSubview:view];
+}
+
+- (void)startTimer {
+    _timerView = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateTimer:) userInfo:@"leewp" repeats:YES];
+}
+
+- (void)stopTimer {
+    if (_timerView != nil){
+        [_timerView invalidate];
+    }
+}
+
+- (void)updateTimer: (NSTimer*) timer {
+    NSLog(@"Timer running %@", timer.userInfo);
+    UIView* view = [self.view viewWithTag:103];
+    view.frame = CGRectMake(view.frame.origin.x+1, view.frame.origin.y+1, 40, 40);
 }
 
 - (void)didReceiveMemoryWarning {

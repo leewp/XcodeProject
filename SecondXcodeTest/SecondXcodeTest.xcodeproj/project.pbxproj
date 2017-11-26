@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1A952631FCAC2360090D994 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A952621FCAC2360090D994 /* ViewController2.m */; };
 		C1B971731FCA89B4007FD28A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B971721FCA89B4007FD28A /* AppDelegate.m */; };
 		C1B971761FCA89B4007FD28A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B971751FCA89B4007FD28A /* ViewController.m */; };
 		C1B971791FCA89B4007FD28A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B971771FCA89B4007FD28A /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1A952611FCAC2360090D994 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		C1A952621FCAC2360090D994 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		C1B9716E1FCA89B4007FD28A /* SecondXcodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondXcodeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B971711FCA89B4007FD28A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1B971721FCA89B4007FD28A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +45,8 @@
 		C1B971651FCA89B4007FD28A = {
 			isa = PBXGroup;
 			children = (
+				C1A952611FCAC2360090D994 /* ViewController2.h */,
+				C1A952621FCAC2360090D994 /* ViewController2.m */,
 				C1B971701FCA89B4007FD28A /* SecondXcodeTest */,
 				C1B9716F1FCA89B4007FD28A /* Products */,
 			);
@@ -143,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B971761FCA89B4007FD28A /* ViewController.m in Sources */,
+				C1A952631FCAC2360090D994 /* ViewController2.m in Sources */,
 				C1B971811FCA89B4007FD28A /* main.m in Sources */,
 				C1B971731FCA89B4007FD28A /* AppDelegate.m in Sources */,
 			);
