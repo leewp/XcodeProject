@@ -16,6 +16,8 @@
 @implementation ViewController
 
 @synthesize mySwitch = _mySwitch;
+@synthesize mProgressView = _progressView;
+@synthesize mSlider = _slider;
 
 - (void)testLabel{
     UILabel* label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 100)];
@@ -48,11 +50,37 @@
     }
 }
 
+- (void)testProgressAndSlider {
+    _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(10, 100, 200, 0)];
+    _progressView.progress = 0.3;
+    _progressView.progressViewStyle = UIProgressViewStyleDefault;
+    //[_progressView setTintColor:[UIColor brownColor]];
+    //[_progressView setTrackTintColor:[UIColor blackColor]];
+    //[_progressView setProgressTintColor:[UIColor redColor]];
+    [self.view addSubview: _progressView];
+    
+    _slider = [[UISlider alloc] initWithFrame:CGRectMake(10, 200, 200, 40)];
+    _slider.minimumValue = 0;
+    _slider.maximumValue = 100;
+    _slider.value = 40;
+    //[_slider setTintColor:[UIColor brownColor]];
+    //[_slider setMaximumTrackTintColor:[UIColor purpleColor]];
+    //[_slider setMinimumTrackTintColor:[UIColor redColor]];
+    //[_slider setThumbTintColor:[UIColor greenColor]];
+    [_slider addTarget:self action:@selector(pressSlider) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:_slider];
+}
+
+- (void)pressSlider {
+    _progressView.progress = _slider.value / (_slider.maximumValue - _slider.minimumValue);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"vc1 viewDidLoad 第一次调用");
-    [self testSwitch];
+    //[self testSwitch];
+    [self testProgressAndSlider];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -72,8 +100,8 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    ViewController2* vc2 = [[ViewController2 alloc] init];
-    [self presentViewController:vc2 animated:YES completion:nil];
+    //ViewController2* vc2 = [[ViewController2 alloc] init];
+    //[self presentViewController:vc2 animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
