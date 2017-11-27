@@ -8,13 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UIAlertViewDelegate> {
+@interface ViewController : UIViewController<UIAlertViewDelegate, UITextFieldDelegate> {
     UIAlertView* _alertView;
     UIActivityIndicatorView* _indicatorView;
+    UITextField* _textFieldUsername;
+    UITextField* _textFieldPassword;
 }
 
 @property (retain,nonatomic) UIAlertView* alertView;
 @property (retain,nonatomic) UIActivityIndicatorView* indicatorView;
-
+@property (retain,nonatomic) UITextField* textFieldUsername;
+@property (retain,nonatomic) UITextField* textFieldPassword;
 @end
 
