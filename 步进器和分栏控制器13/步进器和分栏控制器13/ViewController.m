@@ -29,7 +29,7 @@
     [_stepper addTarget:self action:@selector(stepChange) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:_stepper];
     
-    _segControl = [[UISegmentedControl alloc] initWithFrame:CGRectMake(10, 300, 300, 100)];
+    _segControl = [[UISegmentedControl alloc] initWithFrame:CGRectMake(10, 300, 300, 40)];
     [_segControl insertSegmentWithTitle:@"0元" atIndex:0 animated:YES];
     [_segControl insertSegmentWithTitle:@"10元" atIndex:1 animated:NO];
     [_segControl insertSegmentWithTitle:@"20元" atIndex:2 animated:YES];
