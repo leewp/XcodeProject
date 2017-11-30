@@ -17,6 +17,23 @@
 @synthesize indicatorView = _indicatorView;
 @synthesize textFieldUsername = _textFieldUsername;
 @synthesize textFieldPassword = _textFieldPassword;
+- (IBAction)pressRegister:(id)sender {
+    NSLog(@"register press");
+}
+- (IBAction)pressLogin:(id)sender {
+    NSString* defUser=@"leewp";
+    NSString* defPwd = @"123456";
+    NSString* inUser = _tfUserName.text;
+    NSString* inPws = _tfPassword.text;
+    NSString* msg = [NSString stringWithFormat:@"欢迎你, %@", inUser];
+    NSLog(@"u=%@, p=%@", inUser, inPws);
+    if ([defUser isEqualToString:inUser] && [defPwd isEqualToString:inPws]){
+        UIAlertView* v = [[UIAlertView alloc] initWithTitle:@"登录成功" message:[NSString stringWithFormat:@"欢迎你, %@", inUser] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [v show];
+    }else {
+        [[[UIAlertView alloc] initWithTitle:@"登陆失败" message:@"用户名或者密码错误" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+    }
+}
 
 - (void)testAlertView {
     _alertView = [[UIAlertView alloc] initWithTitle:@"警告" message:@"您的手机电量过低，即将自动关机，请自行保存好相关数据" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"OK",@"我知道了",@"朕知道了", nil];
@@ -122,7 +139,33 @@
 - (void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.textFieldUsername resignFirstResponder];
     [self.textFieldPassword resignFirstResponder];
+    [_tfUserName resignFirstResponder];
+    [_tfPassword resignFirstResponder];
 }
+
+- (void) testSomeObj {
+    
+    NSString* str1 = [NSString stringWithFormat:@"我的名字叫做%@Y", @"嬴政"];
+    NSString* str2 = @"我的名字叫做嬴政y";
+    if (str1 == str2){
+        NSLog(@"!!!!!!!!!!!!!!!str1==str2");
+    }
+    if ([str1 isEqualToString:str2]){
+        NSLog(@"###########str1 equals str2");
+    }
+    
+    if ([str1 compare: str2 options: NSCaseInsensitiveSearch | NSNumericSearch] == NSOrderedSame){
+        NSLog(@"str compare match str2");
+    }
+    NSRange range = [str1 rangeOfString:@"叫"];
+    if (range.location != NSNotFound){
+        NSLog(@"location = %ld, length = %ld", range.location, range.length);
+        
+    }
+    //NSLog(@"%@", str1);
+
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -130,7 +173,9 @@
     
     //[self addTwoTestBtn];
     
-    [self testTextField];
+    //[self testTextField];
+    
+    //[self testSomeObj];
 }
 
 
