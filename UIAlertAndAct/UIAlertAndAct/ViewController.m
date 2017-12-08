@@ -61,6 +61,8 @@
     [self.view addSubview:_indicatorView];
     [_indicatorView startAnimating];
     [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(stopIndicator:) userInfo:nil repeats:NO];
+    
+    
 }
 
 - (void)stopIndicator: (NSTimer*) timer{

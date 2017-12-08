@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NSString+NumberConvenience.h"
+#import <AFNetworking.h>
 
 @interface ViewController ()
 
@@ -38,6 +40,16 @@
     float x = [UIScreen mainScreen].bounds.size.width;
     float y = [UIScreen mainScreen].bounds.size.height;
     NSLog(@"x= %f, y= %f",x,y);
+    NSLog(@"number=%@", [@"tesadfasfafa" lengthAsNumber]);
+    NSArray * phrase;
+    NSString* path = [[NSBundle mainBundle] bundlePath];
+    NSString* filePath = [NSString stringWithFormat:@"%@/test.txt", path];
+    phrase = [NSArray arrayWithObjects:@"This", @"is", @"a", @"test", nil];
+    [phrase writeToFile:filePath atomically:YES];
+    
+    NSArray* phrase2 = [NSArray arrayWithContentsOfFile:filePath];
+    NSLog(@"path=%@",path);
+    NSLog(@"Read from file %@", phrase2);
     
 }
 

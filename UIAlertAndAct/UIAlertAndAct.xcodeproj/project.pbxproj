@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F16AB7361FD8E50B00C55A30 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F16AB7351FD8E50B00C55A30 /* 2.jpg */; };
 		F17E8D591FCBEEF300DF7E57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17E8D581FCBEEF300DF7E57 /* main.m */; };
 		F17E8D5C1FCBEEF300DF7E57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17E8D5B1FCBEEF300DF7E57 /* AppDelegate.m */; };
 		F17E8D5F1FCBEEF300DF7E57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17E8D5E1FCBEEF300DF7E57 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F16AB7351FD8E50B00C55A30 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		F17E8D541FCBEEF300DF7E57 /* UIAlertAndAct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIAlertAndAct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17E8D581FCBEEF300DF7E57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F17E8D5A1FCBEEF300DF7E57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				F17E8D5E1FCBEEF300DF7E57 /* ViewController.m */,
 				F17E8D601FCBEEF300DF7E57 /* Main.storyboard */,
 				F17E8D631FCBEEF300DF7E57 /* Assets.xcassets */,
+				F16AB7351FD8E50B00C55A30 /* 2.jpg */,
 				F17E8D651FCBEEF300DF7E57 /* LaunchScreen.storyboard */,
 				F17E8D681FCBEEF300DF7E57 /* Info.plist */,
 				F17E8D571FCBEEF300DF7E57 /* Supporting Files */,
@@ -140,6 +143,7 @@
 				F17E8D671FCBEEF300DF7E57 /* LaunchScreen.storyboard in Resources */,
 				F17E8D641FCBEEF300DF7E57 /* Assets.xcassets in Resources */,
 				F17E8D621FCBEEF300DF7E57 /* Main.storyboard in Resources */,
+				F16AB7361FD8E50B00C55A30 /* 2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +313,7 @@
 				F17E8D6D1FCBEEF300DF7E57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

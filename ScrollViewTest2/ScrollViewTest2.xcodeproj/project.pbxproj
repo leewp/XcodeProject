@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DB932D9E3DC97C77FABB936 /* libPods-ScrollViewTest2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F5FCE9FA97C170310AE749 /* libPods-ScrollViewTest2.a */; };
+		F13F600D1FD157C9008B489E /* NSString+NumberConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = F13F600C1FD157C9008B489E /* NSString+NumberConvenience.m */; };
 		F1BE6F751FCFB9CB001E0850 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BE6F741FCFB9CB001E0850 /* main.m */; };
 		F1BE6F781FCFB9CC001E0850 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BE6F771FCFB9CC001E0850 /* AppDelegate.m */; };
 		F1BE6F7B1FCFB9CC001E0850 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BE6F7A1FCFB9CC001E0850 /* ViewController.m */; };
@@ -25,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89F5FCE9FA97C170310AE749 /* libPods-ScrollViewTest2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScrollViewTest2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E23432B00570C2DC6FA3C40 /* Pods-ScrollViewTest2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewTest2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewTest2/Pods-ScrollViewTest2.debug.xcconfig"; sourceTree = "<group>"; };
+		F13F600B1FD157C9008B489E /* NSString+NumberConvenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NumberConvenience.h"; sourceTree = "<group>"; };
+		F13F600C1FD157C9008B489E /* NSString+NumberConvenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NumberConvenience.m"; sourceTree = "<group>"; };
 		F1BE6F701FCFB9CB001E0850 /* ScrollViewTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1BE6F741FCFB9CB001E0850 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1BE6F761FCFB9CC001E0850 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +50,7 @@
 		F1BE6F911FCFFC17001E0850 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		F1BE6F921FCFFC17001E0850 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		F1BE6F931FCFFC17001E0850 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F2B14B5CF840846665E44C17 /* Pods-ScrollViewTest2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewTest2.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewTest2/Pods-ScrollViewTest2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,18 +58,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB932D9E3DC97C77FABB936 /* libPods-ScrollViewTest2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		119C227B3222B58667B5CB77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89F5FCE9FA97C170310AE749 /* libPods-ScrollViewTest2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83B530C9E36FFEBBBF7F8D17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E23432B00570C2DC6FA3C40 /* Pods-ScrollViewTest2.debug.xcconfig */,
+				F2B14B5CF840846665E44C17 /* Pods-ScrollViewTest2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F1BE6F671FCFB9CB001E0850 = {
 			isa = PBXGroup;
 			children = (
+				F13F600B1FD157C9008B489E /* NSString+NumberConvenience.h */,
+				F13F600C1FD157C9008B489E /* NSString+NumberConvenience.m */,
 				F1BE6F8A1FCFFBDE001E0850 /* images */,
 				F1BE6F721FCFB9CB001E0850 /* ScrollViewTest2 */,
 				F1BE6F711FCFB9CB001E0850 /* Products */,
+				83B530C9E36FFEBBBF7F8D17 /* Pods */,
+				119C227B3222B58667B5CB77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1BE6F871FCFB9CC001E0850 /* Build configuration list for PBXNativeTarget "ScrollViewTest2" */;
 			buildPhases = (
+				CFBA882D1D2C809AC9DC2DE2 /* [CP] Check Pods Manifest.lock */,
 				F1BE6F6C1FCFB9CB001E0850 /* Sources */,
 				F1BE6F6D1FCFB9CB001E0850 /* Frameworks */,
 				F1BE6F6E1FCFB9CB001E0850 /* Resources */,
+				2AA13D072BBF1C1CD1695DE0 /* [CP] Embed Pods Frameworks */,
+				39F64E30212A32C8E3D129C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,11 +221,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AA13D072BBF1C1CD1695DE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewTest2/Pods-ScrollViewTest2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39F64E30212A32C8E3D129C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewTest2/Pods-ScrollViewTest2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFBA882D1D2C809AC9DC2DE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollViewTest2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1BE6F6C1FCFB9CB001E0850 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F13F600D1FD157C9008B489E /* NSString+NumberConvenience.m in Sources */,
 				F1BE6F7B1FCFB9CC001E0850 /* ViewController.m in Sources */,
 				F1BE6F781FCFB9CC001E0850 /* AppDelegate.m in Sources */,
 				F1BE6F751FCFB9CB001E0850 /* main.m in Sources */,
@@ -312,6 +396,7 @@
 		};
 		F1BE6F881FCFB9CC001E0850 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E23432B00570C2DC6FA3C40 /* Pods-ScrollViewTest2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollViewTest2/Info.plist;
@@ -324,6 +409,7 @@
 		};
 		F1BE6F891FCFB9CC001E0850 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2B14B5CF840846665E44C17 /* Pods-ScrollViewTest2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollViewTest2/Info.plist;
@@ -353,6 +439,7 @@
 				F1BE6F891FCFB9CC001E0850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
